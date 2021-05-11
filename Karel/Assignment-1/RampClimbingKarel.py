@@ -14,7 +14,26 @@ def main():
     starting to write your own code. You should also delete this
     comment and replace it with a better, more descriptive one.
     """
-    pass
+    while front_is_clear():
+        put_beeper()
+        move_around()
+        turn_right()
+    put_beeper()
+
+def move_around():
+    move()
+    move()
+    turn_left()
+    move()
+
+def turn_around():
+    turn_left()
+    turn_left()
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
 
 if __name__ == '__main__':
     run_karel_program('RampKarel1.w')
